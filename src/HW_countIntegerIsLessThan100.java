@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class HW_countInteger {
+public class HW_countIntegerIsLessThan100 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter amount of Integer that you want to print: ");
@@ -16,8 +16,10 @@ public class HW_countInteger {
                 }
             }
             if (check) {
-                count++;
-                System.out.println("n = " + n);
+                if (n < 100) {
+                    count++;
+                    System.out.println("n = " + n);
+                }
             }
             n++;
         }
